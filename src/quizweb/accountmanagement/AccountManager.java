@@ -14,9 +14,11 @@ public class AccountManager {
 	}
 	
 	public void createNewAccount(String name, String password, int type){
+		User usr=null;
 		Encryption e = new Encryption();
 		String hashedPassword = e.generateHashedPassword(password);
-		new User(name, hashedPassword, name, type);
+		usr=new User(name, hashedPassword, name, type);
+		usr.addUserToDB();
 	}
 	
 	public boolean accountMatch(String name, String password) {

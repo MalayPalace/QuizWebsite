@@ -10,9 +10,9 @@ public class DBConnection {
 //	static String password = "aebaujei";
 //	static String server = "mysql-user-master.stanford.edu";
 //	static String database = "c_cs108_yzzhu";
-	static String account = "ccs108gxj";
-	static String password = "aehifinu";
-	static String server = "mysql-user-master.stanford.edu";
+	static String account = "root";
+	static String password = "malay";
+	static String server = "127.0.0.1:3306";
 	static String database = "c_cs108_gxj";	
 	
 	public static Connection con = initConnection();
